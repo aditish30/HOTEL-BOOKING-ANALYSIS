@@ -101,34 +101,6 @@ Q-10 check the visitors coming from which segment?
 Q-11 check the highest Avrage daily rate months in 2016?
 
 
-
-## Conclusion
-'PRT'(Portugal )has the highest no of visitor (27355) while 'GBR'(Great Britain) has the second highest no of the visitor(10424) and 'FRA'(France)has the third highest no of the visitors(8823)August is the highest reservation month (11242) meanwhile the lowest reservation month is january(4685)
-
-BB is the most popular meal ordered by the visitor(67907)
-
-City Hotel have the Highest reservation by the visitors as compare to Resort Hotel
-
-The 72.4% booking were not canceled and 27.5% booking have been canceled
-
-The highest cancelation rate was found in City Hotel and Highest booking was also found in City Hotel.
-
-The bare minimum number of the guests were repeated
-
-Most of time the visitors were arrived in the year of 2016 and 2017 in the city hotel.
-
-The maximum of visitors like city Hotels.
-
-The prices for resort hotels were higher and fluctuate more than city hotels.
-
-City hotel: the ADR was more costly during the month of july,august, may, june; Resort Hotel: the ADR was more costly in during the month of july, august, june
-
-Most of the visitor are coming from Online TA in City hotel and Resort hotel
-
-Highest average daily rate month in 2016 is August
-
-And many more conclusions.
-
 # Challenges
 (1) There was a lot of duplicate data.
 (2) Data was present in wrong datatype format.
