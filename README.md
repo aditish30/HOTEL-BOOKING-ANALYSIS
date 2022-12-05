@@ -1,127 +1,42 @@
 # HOTEL-BOOKING-ANALYSIS
 Analyzing the data of hotel booking in the year 2015-2017
 
-# Objective 
-We are provided with a hotel bookings dataset.
-Out main objective is perform EDA on the given dataset and 
-draw useful conclusions about general trends in hotel bookings and how factors governing hotel bookings interact with each other.
+# Summary
+
+The dataset represents the data of City hotels and Resort Hotels. The dataset have 32 variables with 119,390 observations. Each observation represents a hotel booking. The datasets comprehend bookings due to arrive between the 1st of July of 2015 and the 31st of August 2017, including bookings that effectively
+arrived and bookings that were canceled. Since this is hotel real data, all data elements pertaining hotel or customer identification were removed.
 
 # Problem Statement:
 
-The hotel industry has a very big role in the world of business and is a very big field that depends upon different factors such as types of hotels,
-booking cancellations, type of booking data, date, year, month, type of meal, etc. By analyzing past datasets, it is easier to find various flaws, 
-and by correcting the flaws, we can improve the required business strategy to be more effective than the others and, most importantly, to get closer to the interests,
-wishes, and needs of customers and provide them with satisfying service. We are working
-on a hotel dataset that contains booking information for city and resort hotels with their 
-corresponding variables, such as cancelled bookings, arrival data per year, arrival data per month, arrival data per day, 
-types of guests (children, adults, and babies), etc. We have a total of 119390 rows and 32 columns. Firstly, we understand the meaning 
-of each column, as it is very important to understand the data first to work effectively on the problems using the provided dataset. 
-Secondly, we have done filtering and manipulation in which we did renaming of columns, found missing values in which we found only 5 
-columns containing null values (i.e., company, country, agent, and children), made changes to null values (we changed null values with zero), 
-found duplicate values (total 31980 null values and 87230 are not null values), and dropped duplicate values, after which we have totalled 87230 
-rows and 33 columns. finding through data analysis and visualization, we have performed various problems and reached their conclusions by 
-plotting a bar graph, a pie chart, a count plot, a graphical representation (booking data by the country of origin), a heat map ( correlation between variables),
-and a, line plot.
+1.In which of the hotel the highest booking was made
+2.In which type of hotel people prefer stay in terms of days
+3.Cancelation Done Based on months
+4.High Cancelation rate in hotels
+5.Arrival Seasonality based on years, months and days
+6.Check whether the guest is repeated or not
+7.Mode of bookings through market segment and distribution channel
+8.When was the majority stays made?
+9.What type of meal preferred by the customer in each hotel
+10.In which country the highest booking was made
+11.What kind of visitors travelled more?
+12.Which was the most preferred deposit type made
+13.Which kind of rooms were assigned for different adult size
 
-# Dataset
-We are given a hotel bookings dataset. This dataset contains booking information for a city hotel and a resort hotel. 
-It contains the following features.
+# Conclusion:
+ From the given dataset, after performing EDA based upon all of the above mentioned, we conclude the inferences which we found were:
 
-- hotel: Name of hotel ( City or Resort)
-- is_canceled: Whether the booking is canceled or not (0 for no canceled and 1 for canceled)
-- lead_time: time (in days) between booking transaction and actual arrival.
-- arrival_date_year: Year of arrival
-- arrival_date_month: month of arrival
-- arrival_date_week_number: week number of arrival date.
-- arrival_date_day_of_month: Day of month of arrival date
-- stays_in_weekend_nights: No. of weekend nights spent in a hotel
-- stays_in_week_nights: No. of weeknights spent in a hotel
-- adults: No. of adults in single booking record.
-- children: No. of children in single booking record.
-- babies: No. of babies in single booking record. 
-- meal: Type of meal chosen 
-- country: Country of origin of customers (as mentioned by them)
-- market_segment: What segment via booking was made and for what purpose.
-- distribution_channel: Via which medium booking was made.
-- is_repeated_guest: Whether the customer has made any booking before(0 for No and 1 for Yes)
-- previous_cancellations: No. of previous canceled bookings.
-- previous_bookings_not_canceled: No. of previous non-canceled bookings.
-- reserved_room_type: Room type reserved by a customer.
-- assigned_room_type: Room type assigned to the customer.
-- booking_changes: No. of booking changes done by customers
-- deposit_type: Type of deposit at the time of making a booking (No deposit/ Refundable/ No refund)
-- agent: Id of agent for booking
-- company: Id of the company making a booking
-- days_in_waiting_list: No. of days on waiting list.
-- customer_type: Type of customer(Transient, Group, etc.)
-- adr: Average Daily rate.
-- required_car_parking_spaces: No. of car parking asked in booking
-- total_of_special_requests: total no. of special request.
-- reservation_status: Whether a customer has checked out or canceled,or not showed 
-- reservation_status_date: Date of making reservation status.
-
-Total number of rows in data: 119390
-Total number of columns: 32
-
-Data Cleaning:
-(1) Removing Duplicate rows
-All duplicate rows were dropped.
-
-(2) Handling null values
-Null values in columns company and agent were replaced by 0.
-Null values in column country were replaced by 'others'.
-Null values in column children were replaced by the mean of the column.
-
-(3) Converting columns to appropriate data types
-Changed data type of children, company, agent to str type.
-Changed data type of reservation_status_date to date type.
-
-(4) Removing outliers
-One outlier was found in the adr column. Simply dropped it.
-
-(5) Creating new columns
-Created new column total_stay by adding stays_in_weekend_nights+stays_in_week_nights.
-Created new column total_people by adding adults+children+babies.
-
-# Exploratory Data Analysis
-Performed EDA and tried answering the following questions:
-
-Q-1 which is the most visited country by the visitor 
-Q-2 In which month the highest reservations are done?
-Q-3 which is the most populor meal ordered by the visitors?
-Q-4 In which type of hotel the reservation is highest? (A) City hotel (B) Resort hotel
-Q-5 To check the average cancellation booking of the year 2015,2016,2017. (1 is represented as the  canceled booking therefore, 
-0 represented as the  not-canceled booking)
-Q-5 what is the cancellation rate between city and resort hotel?
-Q-6 To check if the guest are Repeated or not (if guest is repeated (1) and if guest is not repeated(0))
-Q-7 In the following years 2015,2016,2017 when the hotel is mostly booked by the visitors
-Q-8 calculatet the ADR per person?
-Q-9 find the ADR ?
-Q-10 check the visitors coming from which segment?
-Q-11 check the highest Avrage daily rate months in 2016?
-
-
-# Challenges
-(1) There was a lot of duplicate data.
-(2) Data was present in wrong datatype format.
-(3) Choosing appropriate techniques to use was difficult.
-(4) A lot of null values were there in the dataset.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1.Majority of the hotels booked are city hotel. Definitely need to spend the most targeting fund on those hotel.
+2.People also prefer to stay for longer duration in Resort Hotels and prefer City Hotels for Shorter duration.
+3.We also realize that the high rate of cancellations can be due high no deposit policies.
+4.We should also target months between May to Aug. Those are peak months due to the summer period.
+5.We see there is less amount of repeated guest.
+6.Majority of the bookings are done through online travel agents.
+7.Most the peoples prefer to stay in week day nights compared to weekend’s night.
+8.Majority of the peoples prefer BB (Bed & Breakfast) category in the meal section.
+9.Generally couples travel most from the given data.
+10.From the given set of data Portugal is the country where majority of the bookings were done.
+11.Majority of the hotels does not require deposit type, so this may also be the reason for the high cancelation rates.
+12.Lastly coming to room type, solo travelers prefer type A rooms, couples prefer type A rooms and traveling in a group or families prefer G type of rooms.
 
 
 
